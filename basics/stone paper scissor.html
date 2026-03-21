@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissors</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stone Paper Scissors Game</h1>
+    <button onclick="
+    let randomNumber = Math.random() * 3;
+    let computerChoice;
+    if(randomNumber > 0 && randomNumber <= 1){
+        computerChoice = 'Stone';
+        //console.log('Stone');  
+    }else if(randomNumber > 1 && randomNumber <= 2){
+         computerChoice = 'Paper';
+       // console.log('Paper');
+    }else{
+         computerChoice = 'Scissors';
+       // console.log('Scissors');
+    }
+    
+    let resultMsg;
+    if(computerChoice === 'Paper'){
+        resultMsg = 'Computer is winner';
+    }else if(computerChoice === 'Scissors'){
+        resultMsg = 'You are winner';  
+    }else{
+        resultMsg = `It's tie`;   
+    } 
+    alert(`Computer choice is ${computerChoice}, and ${resultMsg}`);">Stone</button>
+
+
+    <button onclick="
+     randomNumber = Math.random() * 3;
+     //computerChoice;
+    if(randomNumber > 0 && randomNumber <= 1){
+        computerChoice = 'Stone';
+        //console.log('Stone');  
+    }else if(randomNumber > 1 && randomNumber <= 2){
+         computerChoice = 'Paper';
+       //console.log('Paper');
+    }else{
+         computerChoice = 'Scissors';
+       //console.log('Scissors');
+    }
+     //resultMsg;
+    if(computerChoice === 'Paper'){
+        resultMsg = `It's tie`;
+    }else if(computerChoice === 'Scissors'){
+        resultMsg = 'Computer are winner';  
+    }else{
+        resultMsg = `You are winner`;   
+    } 
+    alert(`Computer choice is ${computerChoice} ${resultMsg}`);">Paper</button>
+
+
+
+    <button onclick="
+    randomNumber = Math.random() * 3;
+    //computerChoice;
+    if(randomNumber > 0 && randomNumber <= 1){
+        computerChoice = 'Stone';
+        //console.log('Stone');  
+    }else if(randomNumber > 1 && randomNumber <= 2){
+         computerChoice = 'Paper';
+       // console.log('Paper');
+    }else{
+         computerChoice = 'Scissors';
+       // console.log('Scissors');
+    }
+    
+    //resultMsg;
+    if(computerChoice === 'Paper'){
+        resultMsg = 'You are winner';
+    }else if(computerChoice === 'Scissors'){
+        resultMsg = `It's tie`;  
+    }else{
+        resultMsg = 'Computer is winner';   
+    } 
+    alert(`Computer choice is ${computerChoice}, and ${resultMsg}`);">Scissors</button>
+</body>
+</html>
